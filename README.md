@@ -11,6 +11,16 @@ This repository comprises my assignments and class notes I maintained while bein
 **Theory assignment**: The folder theory assignment contains a pdf version of the assignment.
 
 
+## Run Project
+
+
+
+```bash
+  npm install package.json
+  npm start
+ 
+```
+    
 
 ## License
 
