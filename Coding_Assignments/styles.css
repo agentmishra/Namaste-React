@@ -1,4 +1,9 @@
-.namaste {
+.title {
     text-align: center;
     color: orange;
+}
+
+.para {
+    color: green;
+    font-weight: 700;
 }

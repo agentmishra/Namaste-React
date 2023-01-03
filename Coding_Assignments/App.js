@@ -1,21 +1,37 @@
-// Render an <h1 class="namaste">Namaste React using React</h1> on the page inside the given root.
-
 import React from "react";
 import {createRoot} from "react-dom/client";
 
 
-
-
-// Rendering in the root
+    // Rendering in the root
 const root = document.querySelector("#root");
 
-const reactElement = React.createElement("h1", {className: "namaste"}, "Namaste React using React");
-createRoot(root).render(reactElement)
+const paragraph = (
+        <p>This is a paragraph elementt</p>
+    )
+
+const ParagraphComponent = function() {
+        return(
+            <p className="para">This is a paragraph Component</p>
+        )
+    }
 
 
-// Nested React Elements 
-const paragraphElement = React.createElement("p", {className:"text"},  "Chapter 02-Igniting our App");
-const container = React.createElement("div", {className:"container"}, [reactElement, paragraphElement])
-createRoot(root).render(container);
+const TitleComponent = function() {
+            return (
+                <div>
+                    <ParagraphComponent/> 
+                    <h1 className="title" key="h1">This is a heading 1</h1>
+                    <h2 className="title" key="h2">This is a heading 2</h2>
+                    <h3 className="title" key="h3">This is a heading 3</h3>
+                    
+                    {paragraph} 
+                </div>
+            )
+    }
 
 
+    
+
+
+
+    createRoot(root).render(<TitleComponent/>);
