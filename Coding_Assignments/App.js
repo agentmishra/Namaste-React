@@ -1,37 +1,46 @@
 import React from "react";
 import {createRoot} from "react-dom/client";
+import logoImage from './img/logo.jpg';
+import userIcon from "./img/userIcon.png"
 
 
     // Rendering in the root
 const root = document.querySelector("#root");
 
-const paragraph = (
-        <p>This is a paragraph elementt</p>
-    )
 
-const ParagraphComponent = function() {
-        return(
-            <p className="para">This is a paragraph Component</p>
-        )
-    }
+const HeaderComponent = function() {
+    return(
+            <>
+                <header>
+                    <a href="#" className="logo-wrap">
+                    <img src={logoImage} alt="" height="70" width="70" />
+                    </a>
 
+                    <div className="search">
+                        <form action="#">
+                            <input type="text" placeholder=" Search Courses" name="search"/>
+                            <button>
+                                <i className="fa fa-search"  /> 
+                            </button>       
+                        </form>
+                    </div>
 
-const TitleComponent = function() {
-            return (
-                <div>
-                    <ParagraphComponent/> 
-                    <h1 className="title" key="h1">This is a heading 1</h1>
-                    <h2 className="title" key="h2">This is a heading 2</h2>
-                    <h3 className="title" key="h3">This is a heading 3</h3>
+                    <span className="btn-wrap">
+                        <a href="#" className="logo-wrap">
+                            <img className="avatar avata-round" src={userIcon} alt="" height="50" width="50" /> 
+                        </a>
+                        
+                    </span>
                     
-                    {paragraph} 
-                </div>
-            )
-    }
+                </header>
+            </>
+    )
+}
+
 
 
     
 
 
 
-    createRoot(root).render(<TitleComponent/>);
+createRoot(root).render(<HeaderComponent/>);
