@@ -8,6 +8,16 @@ import userIcon from "./img/userIcon.png"
 const root = document.querySelector("#root");
 
 
+const searchbar = (
+    <div className="search">
+        <form action="#">
+            <input type="text" placeholder="What are you looking for 🔎🧐🕵" name="search"/>
+            <button className="btn">Search
+            </button>       
+        </form>
+    </div>
+)
+
 const HeaderComponent = function() {
     return(
             <>
@@ -16,14 +26,7 @@ const HeaderComponent = function() {
                     <img src={logoImage} alt="" height="70" width="70" />
                     </a>
 
-                    <div className="search">
-                        <form action="#">
-                            <input type="text" placeholder=" Search Courses" name="search"/>
-                            <button>
-                                <i className="fa fa-search"  /> 
-                            </button>       
-                        </form>
-                    </div>
+                    {searchbar}
 
                     <span className="btn-wrap">
                         <a href="#" className="logo-wrap">
