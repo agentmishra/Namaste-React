@@ -24,22 +24,8 @@ body {
     text-decoration: none;
   }
   
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
   
-  ul li {
-    display: inline-block;
-    margin: 0 1.4rem;
-  }
-  
-  ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  /* Generic Styles End */
+
   
   header {
     display: flex;
@@ -57,10 +43,12 @@ body {
   
   /* styling search bar */
       .search input[type=text]{
-          width:300px;
-          height:25px;
+          width:340px;
+          height:35px;
+          font-size: 16px;
+          padding:13px;
           border-radius:25px;
-          border: none;
+          border: 3px solid black;
       }
            
       .search{
@@ -71,10 +59,9 @@ body {
       .search button{
           background-color: #0074D9;
           color: #f2f2f2;
-          float: right;
           padding: 5px 10px;
-          margin-right: 16px;
-          font-size: 12px;
+          margin: 16px;
+          font-size: 18px;
           border: none;
           cursor: pointer;
       }
