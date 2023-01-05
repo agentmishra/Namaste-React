@@ -24,6 +24,9 @@ body {
     text-decoration: none;
   }
   
+  .title,p {
+    text-align: center;
+  }
   
 
   
@@ -42,7 +45,7 @@ body {
     text-align: right;
   }
   
-
+/* --------------------------Seach Box starts-------------------------------------------------------- */
       .search input[type=text]{
           width:340px;
           height:35px;
@@ -71,11 +74,7 @@ body {
       }
 
 
-
-
-
-
-
+/* -----------------------------Search Box ends ------------------------------------------------------- */
       .avatar {
         border-radius: 50%;
       }
