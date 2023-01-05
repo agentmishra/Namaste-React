@@ -7,13 +7,13 @@
 body {
     font-family: system-ui;
     background-color: #e8e9eb;
+    min-width: 320px;
   }
 
   
   header {
     background-color: white;
     padding: 0.8rem 1.4rem;
-    min-width: 767px;
   }
   
   .btn {
@@ -29,6 +29,7 @@ body {
   
   header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -41,7 +42,7 @@ body {
     text-align: right;
   }
   
-  /* styling search bar */
+
       .search input[type=text]{
           width:340px;
           height:35px;
@@ -52,8 +53,11 @@ body {
       }
            
       .search{
-          float:right;
-          margin:7px;
+        
+          flex: 100%;
+          text-align: center;
+          margin: 1rem -1.4rem 0;
+        
       }
            
       .search button{
@@ -67,10 +71,28 @@ body {
       }
 
 
+
+
+
+
+
       .avatar {
         border-radius: 50%;
       }
 
       .avatar-round {
         border: 2px solid black;
+      }
+
+      @media screen and (min-width: 768px) {
+        header {
+          flex-wrap: no-wrap;
+        }
+        span {
+          order: 3;
+        }
+        .search {
+          flex: none;
+          margin: 0;
+        }
       }

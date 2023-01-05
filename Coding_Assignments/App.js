@@ -18,6 +18,8 @@ const searchbar = (
     </div>
 )
 
+
+
 const HeaderComponent = function() {
     return(
             <>
