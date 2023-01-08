@@ -1,4 +1,4 @@
-
+import { restrautList } from "../data/resurantList"
 
 const searchbar = (
     <div className="search">
@@ -16,9 +16,9 @@ const card = (
                     <img src="https://source.unsplash.com/featured/400x300/?food" alt="" />
 
                     <div className="desc">
-                        <span>$22</span>
-                        <h3>Burger</h3>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cum impedit veniam</p>
+                        <span>{restrautList[0].data?.costForTwoString ?? "₹100 FOR TWO"}</span>
+                        <h3>{restrautList[0].data?.name}</h3>
+                         <p>{restrautList[0].data?.address}</p>
                         <button>Add to Cart</button>
                     </div>
 
