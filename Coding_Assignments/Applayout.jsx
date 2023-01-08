@@ -9,14 +9,6 @@ import Footer from "./component/Footer"
 
 
 
-const searchbar = (
-    <div className="search">
-        <form action="#">
-            <input type="text" placeholder="What are you looking for 🔎🧐🕵" name="search"/>
-            <button className="btn">Search</button>      
-        </form>
-    </div>
-)
 
 const UserIconComponent = function () {
     return (

@@ -176,3 +176,37 @@ button {
   border-radius: 5px;
   font-size: 0.9rem;
 }
+
+
+footer h3 {
+  text-align: center;
+  color: orange;
+}
+
+
+.search input[type=text]{
+  width:340px;
+  height:35px;
+  font-size: 16px;
+  padding:13px;
+  border-radius:25px;
+  border: 3px solid black;
+}
+
+.search{
+
+  flex: 100%;
+  text-align: center;
+  margin: 1rem -1.4rem 0;
+
+}
+
+.search button{
+  background-color: #0074D9;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  margin: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+} 
