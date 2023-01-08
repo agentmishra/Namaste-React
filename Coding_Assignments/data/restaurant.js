@@ -1,6 +1,6 @@
 //Config Driven UI
 
-export const restrautList = [
+export const restaurantList = [
     {
       type: "restaurant",
       data: {

@@ -20,8 +20,8 @@ const navitems = (
 
                 </ul>
 
-                <span class="btn-wrap">
-                    <a href="/" class="logo-wrap">
+                <span className="btn-wrap">
+                    <a href="/" className="logo-wrap">
                         <img src={checkoutcart} alt="" height="70" width="70" />
                     </a>
                  </span>
