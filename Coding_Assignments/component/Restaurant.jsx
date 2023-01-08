@@ -14,9 +14,10 @@ export default function Restaurant(props) {
 
 
                     <div className="desc">
-                        <span>{restaurant.costForTwoString ?? "₹100 FOR TWO"}</span>
-                        <h3>{restaurant.locality}</h3>
-                         <p>{restaurant.address.substring(0,25) ?? "In your Kitchen"}</p>
+                        <span>{restaurant.name ?? "Guess the Food"}</span>
+                        <h3>{restaurant.cuisines.join(', ')}</h3>
+                        <h4>★ {restaurant.avgRating ?? "No rating"}</h4>
+                         <p>{restaurant.deliveryTime ?? "In your Kitchen"} Minutes from your Address</p>
                         <button>Add to Cart</button>
                     </div>
 
